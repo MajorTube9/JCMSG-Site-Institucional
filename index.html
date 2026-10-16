@@ -87,17 +87,17 @@
       </div>
       <form id="form" action="https://formspree.io/f/meaevdwj" method="POST" novalidate>
         <label for="nome">Nome</label>
-        <input id="nome" name="nome" type="text" autocomplete="name" required>
-        <span class="err" data-for="nome"></span>
+        <input id="nome" name="nome" type="text" autocomplete="name" aria-describedby="erro-nome" required>
+        <span class="err" id="erro-nome" data-for="nome"></span>
         <label for="email">E-mail</label>
-        <input id="email" name="email" type="email" autocomplete="email" required>
-        <span class="err" data-for="email"></span>
+        <input id="email" name="email" type="email" autocomplete="email" aria-describedby="erro-email" required>
+        <span class="err" id="erro-email" data-for="email"></span>
         <label for="assunto">Assunto</label>
-        <input id="assunto" name="assunto" type="text" required>
-        <span class="err" data-for="assunto"></span>
+        <input id="assunto" name="assunto" type="text" aria-describedby="erro-assunto" required>
+        <span class="err" id="erro-assunto" data-for="assunto"></span>
         <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-        <span class="err" data-for="mensagem"></span>
+        <textarea id="mensagem" name="mensagem" rows="5" aria-describedby="erro-mensagem" required></textarea>
+        <span class="err" id="erro-mensagem" data-for="mensagem"></span>
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
         <button class="btn" type="submit">Enviar</button>
         <p id="status" role="status" aria-live="polite"></p>

@@ -1,7 +1,7 @@
 /* ===== Variáveis de cor (troque aqui se quiser ajustar a identidade) ===== */
 :root{--azul:#1F3A5F;--azul-esc:#16294a;--laranja:#F5A31A;--laranja-esc:#d98d0b;--bg:#f5f7fa;--texto:#26313f;--branco:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
 body{font-family:'Montserrat',system-ui,sans-serif;color:var(--texto);line-height:1.6;background:var(--branco)}
 img{max-width:100%;height:auto}
 a{color:inherit}
@@ -53,7 +53,7 @@ form .btn{margin-top:18px}
 .footer{background:var(--azul);color:#dbe4f0;padding:36px 0}
 .foot{display:grid;gap:18px;text-align:center;justify-items:center}
 .footer nav a{margin:0 8px;text-decoration:none}.footer a:hover{color:var(--laranja)}
-.whats{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:90;transition:.2s}
+.whats{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:90;transition:.2s}
 .whats:hover{transform:scale(1.08)}
 
 /* Tablet / Desktop */
@@ -83,14 +83,25 @@ form .btn{margin-top:18px}
 .service .icon{flex:none}
 
 /* Ajustes para celular */
-html{-webkit-text-size-adjust:100%}body{overflow-x:hidden}
-@media(max-width:959px){.menu{max-height:calc(100vh - 68px);overflow-x:hidden;overflow-y:auto}}
+body{overflow-x:clip}
+@media(max-width:959px){.menu{max-height:calc(100vh - 68px);max-height:calc(100dvh - 68px);overflow-y:auto}}
 .menu a{min-height:44px}
 .burger{min-width:44px;min-height:44px}
 .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
 .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
 .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 input,textarea{font-size:16px} /* evita zoom automático no iPhone */
-.whats{bottom:calc(100px + env(safe-area-inset-bottom,0px))}
-@media(max-width:479px){.service{flex-direction:column;gap:6px;padding:22px}.hero{min-height:88vh}.btn{width:100%;text-align:center}}
+@media(max-width:767px){
+  .section{padding:56px 0}
+  .service{flex-direction:column;gap:6px;padding:22px}
+  .contact{gap:28px}
+  .info a{overflow-wrap:anywhere}
+  .footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px}
+  .footer nav a{margin:0}
+}
+@media(max-width:479px){
+  .hero{min-height:88vh;min-height:88svh}
+  .btn{width:100%;text-align:center}
+  form{padding:22px}
+}
 @media(min-width:960px){.services{grid-template-columns:repeat(2,1fr)}}

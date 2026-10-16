@@ -40,11 +40,13 @@ Não é necessário instalar dependências. Abra o `index.html` no navegador ou 
 
 ## Formulário de contato
 
-O formulário está conectado ao [Formspree](https://formspree.io/) e envia as mensagens para o endereço configurado na conta. Para testar:
+O formulário está conectado ao [Formspree](https://formspree.io/) e envia as mensagens para o endereço configurado na conta. Ele valida os campos no navegador e inclui o campo honeypot `_gotcha` para ajudar a filtrar envios automatizados. Para testar:
 
 1. Preencha nome, e-mail, assunto e mensagem no site.
 2. Envie o formulário e confira se a mensagem chegou ao painel do Formspree.
 3. Na primeira submissão, confirme o endereço de e-mail se o Formspree solicitar.
+
+Para reduzir spam, mantenha os filtros antispam disponíveis ativados nas configurações do endpoint no Formspree. A validação do navegador e o honeypot ajudam, mas não substituem controles no serviço: como este site é estático, não há limitação confiável de envios por IP no próprio site. Para isso, seria necessário um backend.
 
 ## Personalização
 
