@@ -38,15 +38,13 @@ Não é necessário instalar dependências. Abra o `index.html` no navegador ou 
 4. Selecione a branch `main` e a pasta `/(root)`, e clique em **Save**.
 5. Aguarde a publicação. O GitHub exibirá o endereço do site na própria página de configurações.
 
-## Configurar o formulário
+## Formulário de contato
 
-O formulário usa [Formspree](https://formspree.io/) para receber mensagens. Antes de utilizá-lo:
+O formulário está conectado ao [Formspree](https://formspree.io/) e envia as mensagens para o endereço configurado na conta. Para testar:
 
-1. Crie um formulário no Formspree e copie o endpoint fornecido.
-2. Em `index.html`, substitua `https://formspree.io/f/SEU_ID_AQUI` pelo endpoint real.
-3. Publique a alteração e faça um envio de teste.
-
-Sem essa configuração, o formulário não enviará mensagens.
+1. Preencha nome, e-mail, assunto e mensagem no site.
+2. Envie o formulário e confira se a mensagem chegou ao painel do Formspree.
+3. Na primeira submissão, confirme o endereço de e-mail se o Formspree solicitar.
 
 ## Personalização
 
@@ -57,4 +55,3 @@ Sem essa configuração, o formulário não enviará mensagens.
 ## Domínio próprio
 
 É possível associar um domínio personalizado pelo serviço de hospedagem. A configuração de DNS varia conforme o provedor; antes de alterar registros, confirme as instruções do serviço e preserve os registros de e-mail (MX, SPF e DKIM).
-
