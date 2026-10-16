@@ -91,6 +91,6 @@ html{-webkit-text-size-adjust:100%}body{overflow-x:hidden}
 .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
 .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 input,textarea{font-size:16px} /* evita zoom automático no iPhone */
-.whats{bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+.whats{bottom:calc(100px + env(safe-area-inset-bottom,0px))}
 @media(max-width:479px){.service{flex-direction:column;gap:6px;padding:22px}.hero{min-height:88vh}.btn{width:100%;text-align:center}}
 @media(min-width:960px){.services{grid-template-columns:repeat(2,1fr)}}
