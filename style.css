@@ -81,6 +81,13 @@ form .btn{margin-top:18px}
 .service h3{color:var(--azul);margin-bottom:8px}
 .service ul{margin:12px 0 0 1.1em}.service li{margin-bottom:6px;font-size:.95rem}.service li::marker{color:var(--laranja)}
 .service .icon{flex:none}
+.service-groups{display:grid;gap:16px;margin-top:18px}
+.service-group h4{color:var(--azul);font-size:1rem}
+.service-group ul{margin-top:6px}
+.gallery-grid{display:grid;gap:20px}
+.gallery-item{overflow:hidden;background:#fff;border-radius:10px;box-shadow:0 4px 16px rgba(31,58,95,.1)}
+.gallery-item img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.gallery-item figcaption{padding:14px 16px;color:var(--azul);font-weight:600}
 
 /* Ajustes para celular */
 body{overflow-x:clip}
@@ -98,6 +105,7 @@ input,textarea{font-size:16px} /* evita zoom automático no iPhone */
   .info a{overflow-wrap:anywhere}
   .footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px}
   .footer nav a{margin:0}
+  .gallery-grid{grid-template-columns:1fr}
 }
 @media(max-width:479px){
   .hero{min-height:88vh;min-height:88svh}
@@ -105,3 +113,4 @@ input,textarea{font-size:16px} /* evita zoom automático no iPhone */
   form{padding:22px}
 }
 @media(min-width:960px){.services{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:768px){.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}

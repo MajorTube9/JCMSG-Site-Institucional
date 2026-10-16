@@ -11,7 +11,8 @@ O site foi desenvolvido com HTML e CSS, sem dependências ou processo de compila
 ### Seções
 
 - **Quem Somos** — missão, visão e valores.
-- **Serviços** — segurança do trabalho, treinamentos, perícias e laudos.
+- **Serviços** — segurança do trabalho, treinamentos, perícias e laudos organizados por categoria.
+- **Atuação na prática** — fotos de equipamentos e ambientes industriais.
 - **Contato** — telefone, e-mail e formulário de mensagem.
 
 ## Arquivos
@@ -21,6 +22,7 @@ O site foi desenvolvido com HTML e CSS, sem dependências ou processo de compila
 | `index.html` | Conteúdo e estrutura do site |
 | `style.css` | Estilos e layout responsivo |
 | `hero.png` | Imagem de destaque da página inicial |
+| `images/` | Fotos usadas na seção “Atuação na prática” |
 
 ## Visualizar localmente
 
