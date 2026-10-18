@@ -2,7 +2,6 @@
 
 Site institucional da **JCMSG Engenharia de Segurança**, com informações sobre serviços, apresentação da empresa e canais de contato.
 
-> **Site:** [jcmsg-engenharia.com](https://jcmsg-engenharia.com)
 
 ## Sobre o projeto
 
