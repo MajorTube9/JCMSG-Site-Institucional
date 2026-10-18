@@ -7,6 +7,10 @@ Site institucional da **JCMSG Engenharia de Segurança**, com informações sobr
 
 O site foi desenvolvido com HTML e CSS, sem dependências ou processo de compilação. É responsivo e pode ser publicado em serviços de hospedagem de sites estáticos, como o GitHub Pages e a Netlify.
 
+
+<img width="1000" height="718" alt="jcmsg-video" src="https://github.com/user-attachments/assets/938a5a80-e05c-4af3-ba88-4ae8a74cb7ef" />
+
+
 ### Seções
 
 - **Quem Somos** — missão, visão e valores.
